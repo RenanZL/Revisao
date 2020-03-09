@@ -1,0 +1,73 @@
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var palavra = prompt("insira uma palavra com ate 5 letras")
+        if(palavra.length == 1){
+            console.log(palavra)
+        }
+        if(palavra.length == 2){
+            palavra = palavra.split("")
+            for(var i = 0;i < palavra.length;i++){
+                for(var j = 0; j < palavra.length;j++){  
+                    if(i != j){
+                        console.log(palavra[i]+palavra[j]+palavra[k])
+                    }
+                }
+            }
+        }
+        if(palavra.length == 3){
+            palavra = palavra.split("")
+            for(var i = 0;i < palavra.length;i++){
+                for(var j = 0; j < palavra.length;j++){  
+                    for(var k = 0;k < palavra.length;k++){
+                        if(i != j && j != k && i != k){
+                            console.log(palavra[i]+palavra[j]+palavra[k])
+                        }
+                    }
+                }
+            }
+        }
+        if(palavra.length == 4){
+            palavra = palavra.split("")
+            for(var i = 0;i < palavra.length;i++){
+                for(var j = 0; j < palavra.length;j++){  
+                    for(var k = 0;k < palavra.length;k++){
+                        for(var l = 0; l < palavra.length;l++){
+                            if(i != j && i != k && i != l && j != k && j != l && k != l ){
+                            console.log(palavra[i]+palavra[j]+palavra[k]+palavra[l])
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if(palavra.length == 5){
+            palavra = palavra.split("")
+            for(var i = 0;i < palavra.length;i++){
+                for(var j = 0; j < palavra.length;j++){  
+                    for(var k = 0;k < palavra.length;k++){
+                        for(var l = 0; l < palavra.length;l++){
+                            for(var m = 0; m < palavra.length;m++){
+                                if(i != j && i != k && i != l && i !=m && j != k && j != l && j!=m && k != l && k != m && l != m){
+                                console.log(palavra[i]+palavra[j]+palavra[k]+palavra[l]+palavra[m])
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else{
+            alert("digite uma palavra valida")
+        }
+    </script>
+</body>
+</html>

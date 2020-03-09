@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: rgb(140,79,243);
+            text-align: center;
+        }
+        h2{
+            color: rgb(140,79,243);
+        }
+        #principal{
+            width: 60%;
+            margin-left: 20%;
+            
+        }
+        #js{
+            padding: 10px;
+            width: 50%;
+            float: left;
+        }
+        #tartaruga{
+            width: 50%;
+            float: left;
+            padding-left: 5%;
+        }
+        #ui{
+            clear: both;
+            width: 33.3%;
+            float: left;
+            padding: 10px;
+        }
+        #sass,#wd{
+            width: 33.3%;
+            float: left;
+            padding: 10px;
+        }
+        @media (max-width: 600px){
+            body{
+                background-color: rgb(2, 112, 255);
+            }
+            #principal{
+                width: 100%;
+                margin: 0 auto;
+            }
+            #tartaruga{
+                display: none;
+            }
+            #js,#ui,#sass,#wd{
+                width: 96%;
+                margin-left: 2%;
+            }
+            h1,h2{
+                color:white;
+                font-size: 25px;
+            }
+            h1{
+                padding: 50px;
+            }
+            #js,#sass{
+                background-color:  rgb(140,79,243);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <h1>Cursos de Web Design</h1>
+        <div id="js">
+            <p>
+                <h2>JavaScript e jQuery</h2>
+                No curso de JavaScript e jQuery você irá aprender como manipular os elementos do DOM a partir de interações do usuário. Primeiro eu começo com os fundamentos do JS, ensinando a sintaxe, variáveis, funções, objetos e outros elementos básicos.
+            </p>
+        </div>
+        <div id="tartaruga">
+            <img src="assets/img/tarta.png" alt="imagem de uma tartaruga">
+        </div>
+        <div id="ui">
+            <p>
+                <h2>UI Design</h2>
+                UI Design, ou User Interface Design (Design de Interface do Usuário), é o meio pela qual uma pessoa interage e controla um dispositivo, software ou aplicativo. Esse controle pode ser feito por meio de botões, menus e qualquer elemento que forneça uma interação entre o dispositivo e o usuário.
+            </p>
+        </div>
+        <div id="sass">
+            <p>
+                <h2>SASS</h2>
+                O Sass é uma linguagem baseada em CSS (opa, aí já facilita, não é mesmo?) que depois de compilada gera o bom e velho CSS. Possui duas sintaxes diferentes, o SASS e o SCSS. Essa última é a que acho mais bacana pela semelhança com CSS normal, a outra é atrelada a indentação.
+            </p>
+            
+        </div>
+        <div id="wd">
+            <p>
+                <h2>Web Design</h2>
+                O Web Design é uma extensão da prática do design gráfico, onde o foco do projeto é a criação de web sites e documentos disponíveis no ambiente da World Wide Web.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
